@@ -2,7 +2,7 @@
 - name: Install sshd server
   apt:
    name:
-     - openssh-server
-     - openssh-client
+    - openssh-server
+    - openssh-client
    state: present
    update_cache: yes

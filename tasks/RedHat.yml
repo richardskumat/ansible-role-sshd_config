@@ -2,7 +2,7 @@
 - name: Install sshd server
   yum:
    name:
-     - openssh-server
-     - openssh-clients
+    - openssh-server
+    - openssh-clients
    state: present
    update_cache: yes

@@ -12,9 +12,9 @@
 
 - name: copy over sshd_config template
   template:
-   src: sshdconf.j2
-   dest: /etc/ssh/sshd_config
-   owner: root
-   backup: yes
-   mode: 0644
+    src: sshdconf.j2
+    dest: /etc/ssh/sshd_config
+    owner: root
+    backup: yes
+    mode: 0644
   notify: "restart sshd"

@@ -5,7 +5,7 @@
    state: restarted
    enabled: yes
   when:
-   - ansible_os_family == 'RedHat' 
+   - ansible_os_family == 'RedHat'
   # now I've added these listen directives, ssh will get restarted twice on some systems
   # raspbian 9 has no sshd, just ssh
   # debian9 has ssh and sshd
@@ -16,7 +16,7 @@
   service:
    name: ssh
    state: restarted
-   enabled: yes  
+   enabled: yes
   when:
-   - ansible_os_family == 'Debian'    
-  listen: 'restart sshd'  
+   - ansible_os_family == 'Debian'
+  listen: 'restart sshd'
