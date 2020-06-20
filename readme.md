@@ -1,7 +1,7 @@
 ansible-role-sshd_config
 =========
 
-Primite sshd config role.
+Primitive sshd config role.
 
 Requirements
 ------------
@@ -48,16 +48,6 @@ Dependencies
 
 None.
 
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables
-passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: sshd_config, x: 42 }
-
 License
 -------
 
@@ -68,4 +58,8 @@ Author Information
 
 Richard Skumat
 
-https://github.com/richardskumat/
+https://github.com/richardskumat/ansible-role-sshd_config
+
+https://gitlab.com/richardskumat/ansible-role-sshd_config
+
+https://galaxy.ansible.com/richardskumat/ansible-role-sshd_config
