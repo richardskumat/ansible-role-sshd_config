@@ -1,6 +1,6 @@
 ---
 - name: Install sshd server
-  apt:
+  ansible.builtin.apt:
    name:
     - openssh-server
     - openssh-client

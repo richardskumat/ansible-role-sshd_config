@@ -1,6 +1,6 @@
 ---
 - name: Install sshd server
-  yum:
+  ansible.builtin.yum:
    name:
     - openssh-server
     - openssh-clients

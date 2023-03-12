@@ -1,17 +1,17 @@
 ---
 
 - name: Include tasks specific to Redhat distros.
-  include_tasks: "{{ ansible_os_family }}.yml"
+  ansible.builtin.include_tasks: "{{ ansible_os_family }}.yml"
   when:
     - ansible_os_family == 'RedHat'
 
 - name: Include tasks specific to Debian systems.
-  include_tasks: "{{ ansible_os_family }}.yml"
+  ansible.builtin.include_tasks: "{{ ansible_os_family }}.yml"
   when:
     - ansible_os_family == 'Debian'
 
 - name: Copy over sshd_config template
-  template:
+  ansible.builtin.template:
     src: sshdconf.j2
     dest: /etc/ssh/sshd_config
     owner: root
