@@ -1,5 +1,5 @@
 ---
-- name: restart sshd
+- name: Restart sshd
   service:
    name: sshd
    state: restarted
@@ -10,13 +10,13 @@
   # raspbian 9 has no sshd, just ssh
   # debian9 has ssh and sshd
   # centos 7 has only sshd
-  listen: 'restart sshd'
+  listen: 'Restart sshd'
 
-- name: restart sshd
+- name: Restart sshd
   service:
    name: ssh
    state: restarted
    enabled: yes
   when:
    - ansible_os_family == 'Debian'
-  listen: 'restart sshd'
+  listen: 'Restart sshd'
